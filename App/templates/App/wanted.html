@@ -1,0 +1,25 @@
+{% extends 'App/main.html' %}
+
+{%load static%}
+{%block body %}
+<h1 style="text-align: center;">Wanted Persons</h1>
+{%for i in wanted_persons%}
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/media/{{i.image}}" class="card-img" alt="missing person image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Name. </b>{{i.person_name}}</h5>
+          <h5 class="card-title"><b>Crime type. </b>{{i.person_crime}}</h5>
+          <p class="card-text"><b>Price. </b>{{i.price}}</p>
+          <p class="card-text"><small class="text-muted">{{i.crime_date}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+
+
+{% endblock %}

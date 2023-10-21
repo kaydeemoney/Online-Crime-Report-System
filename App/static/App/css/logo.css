@@ -1,0 +1,51 @@
+.logo {
+    width: 65px;
+    height: 65px;
+    padding: 7px 5px;
+    border-radius: 40px;
+}
+
+#nav__heading {
+    padding-top: 30px;
+}
+
+#nav {
+    
+    margin: 1px;
+    border-radius: 2px;
+    height: 90px;
+    border: 2px double rgb(31, 16, 16)
+    
+}
+
+.buttons__nav {
+    display: flex;
+    margin-left: 300px;
+    margin-left: auto;
+}
+
+/*.button {
+    border-radius: 5px; 
+    background-color: slategray;
+}
+
+.button:hover {
+    background-color: skyblue;
+}*/
+
+.footer {
+    position: relative;
+    bottom: -270px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    padding-top: 50px;
+    height: 200px;
+}
+.navbar{
+    height: 70px;
+    
+    
+    
+
+}

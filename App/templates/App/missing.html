@@ -1,0 +1,28 @@
+{% extends 'App/main.html' %}
+
+{%load static%}
+{%block body %}
+<h1 style="text-align: center;">Missing Persons</h1>
+<hr />
+<hr />
+{%for i in missing_persons%}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="/media/{{i.image}}" class="card-img" alt="missing person image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><b>Name. </b>{{i.person_name}}</h5>
+        <p class="card-text"><b>Age. </b>{{i.age}}</p>
+        <p class="card-text"><small class="text-muted">{{i.missing_date}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<hr />
+{%endfor%}
+
+
+{% endblock %}

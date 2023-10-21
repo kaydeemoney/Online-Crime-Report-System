@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'App/css/logo.css'%}">
+    <link rel="stylesheet" href="{% static 'App/css/home.css'%}">
+    <link rel="stylesheet" href="{% static 'App/css/FirForm.css'%}">
+    <link rel="stylesheet" href="{% static 'App/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'App/css/LoginForm.css'%}">
+    <title>Admin</title>
+    <style>
+        body{
+            padding-bottom: 3rem;
+        }
+
+        .register_info div {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+        }
+
+        .register_info p {
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/"><img class="logo" src="{% static 'App/images/crr.jpg'%}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class='username' class="nav-link" style="color:white; margin-top:6px; margin-right: 20px;">Hello
+                    {{user.username}}</li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Admin">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout/">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="navs_2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/complaint_form/">Complaint Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/crime_stories/">Crime Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/wanted/">Wanted Persons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/missing/">Missing Persons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/help/">Help</a>
+            </li>
+
+
+        </ul>
+
+    </div>
+    <hr>
+    <hr>
+
+    <h1 style="text-align: center;">Admin</h1>
+    <hr>
+    <hr>
+    {% for i in crimes %}
+    <div style="border: 2px solid black;" class="main_div">
+
+        <div class="register_info">
+            <div>
+                <p><b>Complaint Type: </b>{{i.complaint_type}}</p>
+                <p><b>Crime Place: </b>{{i.crime_place}}</p>
+                <p><b>Name: </b>{{i.first_name}} {{i.middle_name}} {{i.last_name}}</p>
+                <p><b>Age: </b>{{i.age}}</p>
+                <p><b>Gender: </b>{{i.gender}}</p>
+
+            </div>
+            <div>
+                <p><b>Crime in detail: </b>{{i.crime_in_detail}}</p>
+                <p><b>Permanent Address: </b>{{i.permanent_address}}</p>
+            </div>
+            <div>
+                <p><b>Landmark: </b>{{i.landmark}}</p>
+                <p><b>State: </b>{{i.state}}</p>
+                <p><b>Distict: </b>{{i.distict_place}}</p>
+                <p><b>Email: </b>{{i.email_id}}</p>
+                <p><b>Mobile Number: </b>{{i.mobile_no}}</p>
+            </div>
+
+        </div>
+        <div class="action_btn">
+
+            <button class="btn btn-primary  ">Edit</button>
+            <button class="btn btn-danger ">Delete</button>
+        </div>
+        
+        
+
+
+
+
+
+    </div>
+
+
+
+
+    {% endfor %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<!-- <footer class="container-fluid bg-dark footer" role="navigation"> -->
+<footer class="footer" role="navigation">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p class="text-primary">© 2019-2020 Crime Reporting , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+
+</html>

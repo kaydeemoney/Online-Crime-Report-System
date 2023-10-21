@@ -1,0 +1,41 @@
+{% extends 'App/main.html' %}
+
+{%load static%}
+{%block body %}
+<style>
+h1{
+    text-align: center;
+}
+.email{
+    color:rgb(45, 45, 235);
+}
+form{
+    border-radius: inherit;
+    border: 2px rgb(43, 35, 30) ;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+</style>
+
+<h1>Help Page</h1><br/>
+<div class="form">
+<form autocomplete="off">
+    <label>Name: </label><br/>
+    <input type="text" placeholder="Enter Your Name"  autocomplete="off" required="true"><br/>
+    <label>Email: </label><br/>
+    <input type="email" placeholder="Enter Your Email Id" ><br/>
+    <label>Phone: </label><br/>
+    <input type="number" placeholder="Enter Your Phone Number" autocomplete="off" required="true"><br/>
+    <label>Explain Your Problem : </label><br/>
+    <input type="text" placeholder="Enter text here..." autocomplete="off" required="true"><br/>
+</form>
+<div>
+Contact Email Id:<br/>
+<h7 class="email">arbaz2279khan@gmail.com</h7>
+
+</div>
+</div>
+
+{% endblock %}

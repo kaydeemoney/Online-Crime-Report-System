@@ -1,0 +1,102 @@
+{% extends 'App/main.html' %}
+{%load static%}
+{%block body %}
+
+<h2 class="heading">Quick Links</h2>
+<h2 class="heading1">First Information Report</h2>
+ <div class="table-pos">
+  <table cellpadding="2" width="100%" bgcolor="333333" align="center"
+cellspacing="2">
+
+
+<tr>
+<td><font size=2 color=White>Police station Name</font></td>
+<td style="padding:10px"><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">Ghaziabad</option>
+<option value="MCA">delhi</option>
+<option value="MBA">lucknow</option>
+<option value="BCA">Mumbai</option>
+</select></td>
+</tr>
+
+<tr>
+<td style="padding:10px"><font size=2 color=White>Name (if diffrent)</font></td>
+<td><input type="text" name="name"  id="name"
+size="30"></td>
+</tr>
+<tr>
+<td style="padding:10px"><font size=2 color=White>father's Name</font></td>
+<td><input type="text" name="paddress" id="paddress" size="30"></td>
+</tr>
+
+<tr>
+<td style="padding:10px"><font size=2 color=White>Distance From Police Station</font></td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" size="30"></td>
+</tr>
+
+
+<tr>
+<td style="padding:10px"><font size=2 color=White>Nature Of Offence</font></td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">Murder</option>
+<option value="MCA">Theft</option>
+<option value="MBA">Rape</option>
+<option value="BCA">Harrasment</option>
+<option value="BCA">Snaching</option>
+</select></td>
+</tr>
+
+
+
+<tr>
+<td style="padding:10px"><font size=2 color=White>Date of Crime</font></td>
+<td><select name="Course">
+<option value="-1" selected>day</option>
+<option value="B.Tech">1</option>
+<option value="MCA">2</option>
+<option value="MBA">3</option>
+<option value="BCA">4</option>
+</select>
+</tr>
+
+<tr>
+<td style="padding:10px"><font size=2 color=White>Description of offence</font></td>
+<td style="padding:10px"><textarea name="personaladdress"
+id="personaladdress" row="4" cols="20"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" class="submit-btn" value="Submit FIR" /></td>
+</tr>
+</table>
+</div>
+
+    <div class="form-box">
+    <h3 class="headfir">First Information Report..</h3>
+    <p class="para"><font size=2 color=White>The basic purpose of filing a FIR is to set criminal law into motion and not to state all the minute details therein[1]. A First Information Report is the initial step in a criminal case recorded by the police and contains the basic knowledge of the crime committed, place of commission, time of commission, who was the victim, etc. The definition for the First Information Report has been provided in the Code of Criminal Procedure, 1973 by the virtue of Sec. 154</font></p>
+    </div>
+    
+    <div class="new">
+
+       <div class="box">
+       
+       <button type="button" class="btn btn-outline-primary"><a href="#">Missing</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       <button type="button" class="btn btn-outline-primary"><a href="#">Primary</a></button>
+       
+
+       
+       </div>
+    
+    </div>
+
+
+{% endblock %}

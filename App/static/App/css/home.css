@@ -1,0 +1,108 @@
+.navs_2{
+    background-color: rgb(107, 104, 104);
+}
+.home__image{
+    width:100%;
+    height:500px;
+    margin-top:1px;
+}
+
+
+.row1 {
+    display: flex;
+    
+    margin:20px 4px;
+
+}
+.row2 {
+    display: flex;
+    
+}
+.crime__div{
+    width:100%;
+    height:500px;
+    margin:50px;
+}
+
+.crime__card{
+    margin:4px 24px; 
+    border-radius:4px;
+    background-color: snow;
+    border:3px solid rgb(224, 218, 218);
+    width:500px;
+    height:250px;
+    display: flex;
+}
+.card__image{
+   width:200px;
+   height:200;
+
+}
+.crime__card>div{
+    padding-left:10px;
+}
+#crime__heading{
+    text-align: center;
+    
+}
+
+@media screen and (max-width:700px){
+    .row1{
+        flex-direction:column;
+        
+    }
+    .row2{
+        flex-direction: column;
+    }
+    .nav-item{
+        color: beige;
+    }
+    
+   .card{
+       position: absolute;
+       left: auto;
+       top: 10px;
+       right: auto;
+   }
+   .box{
+       text-decoration: darkblue;
+       font-family: fantasy,serif;
+   }
+}
+   .mentor{
+    margin:4px 90px; 
+    border-radius:60px;
+    background-color: snow;
+    border:3px solid rgb(224, 218, 218);
+    width:200px;
+    height:220px;
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .cimage{
+    width:200px;
+    height:200;
+    border-radius:55px;
+ 
+ }
+
+ .mentor_name{
+    margin:-20px 105px; 
+    background-color: snow;   
+    width:200px;
+    height:35px;
+    display: flex;
+    margin-top: 20px;
+    
+   }
+
+   .d-block_w-100{
+      width:1000px;
+      height:400px; 
+     margin: 100px;
+   }
+   .mentor_row{
+       display: flex;
+       flex-direction: row;
+   }

@@ -1,0 +1,152 @@
+{% extends 'App/main.html' %}
+
+{%load static%}
+{%block body %}
+
+
+<h1 style="text-align: center;">Complaint Register</h1>
+<div style="margin: 50px;">
+    <form action="/app/complaint_form/" method="post">{% csrf_token %}
+        <div class="form-group">
+            <label for="inputComplaint">Complaint</label>
+            <input type="text" class="form-control" id="complaint_type" name="complaint_type" placeholder="Ex: Murder">
+        </div>
+        <div class="form-group">
+            <label for="CrimePlace">Crime Place</label>
+            <input type="text" class="form-control" id="crime_place" name="crime_place" placeholder="Crime Place">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Explain </label>
+            <input type="text" class="form-control" id="crime_in_detail" name="crime_in_detail"
+                placeholder="Explain about the case in detail.">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="FirstName">First Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="MiddleName">Middle Name</label>
+                <input type="text" class="form-control" id="middle_name" name="middle_name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="LastName">Last Name</label>
+                <input type="text" class="form-control" name="last_name" id="last_name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="Age">Age</label>
+                <input type="Number" class="form-control" name="age" id="age">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="Gender">Gender</label>
+                <select id="gender" name="gender" class="form-control">
+                    <option selected>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+
+            </div>
+            <div class="form-group col-md-4">
+                <label for="DOB">DOB</label>
+                <input type="date" class="form-control" name="date_of_birth" id="date_of_birth">
+
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Email">Email</label>
+                <input type="email" name="email_id" class="form-control" id="email_id"
+                    placeholder="Enter Your Email Id">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="number" class="form-control" name="mobile_no" id="mobile_no"
+                    placeholder="Enter Your Phone Number">
+            </div>
+        </div>
+
+        <hr />
+        <hr />
+        <!-- <h4>Address</h4> -->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="Number">House No.</label>
+                <input type="number" name="house_no" class="form-control" id="house_no"
+                    placeholder="Enter Your House No.">
+            </div>
+            <div class="form-group col-md-8">
+                <label for="Address">Address</label>
+                <input type="text" name="permanent_address" class="form-control" id="permanent_address"
+                    placeholder="Enter Your Full Adress.">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="Landmark">Landmark</label>
+                <input type="text" class="form-control" id="landmark" name="landmark" placeholder="Landmark">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="State">State</label>
+                <select id="state" name="state" class="form-control">
+                    <option selected>State..</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Telangana</option>
+                    <option>Tamil Nadu</option>
+                    <option>Rajasthan</option>
+                    <option>Odisha</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Distict">Distict</label>
+                <select id="distict_place" name="distict_place" class="form-control">
+                    <option selected>Distict..</option>
+                    <option>Agra</option>
+                    <option>Aligarh</option>
+                    <option>Allahabad</option>
+                    <option>Azamgarh</option>
+                    <option>Chitrakoot</option>
+                    <option>Faizabad</option>
+                    <option>Gorakhpur</option>
+                    <option>Jhansi</option>
+                    <option>Kanpur</option>
+                    <option>Lucknow</option>
+                    <option>Meerut</option>
+                    <option>Mirzapur</option>
+                    <option>Moradabad</option>
+                    <option>Varanasi</option>
+                    <option>Etawah</option>
+                    <option>Ghaziabad</option>
+                    <option>Jaunpur</option>
+                    <option>Kasganj</option>
+                    <option>Farrukhabad</option>
+                    <option>Shahdara</option>
+                    <option>Central Delhi</option>
+                    <option>New Delhi</option>
+                    <option>South Delhi</option>
+                    <option>South West Delhi</option>
+                    <option>Bareilly</option>
+
+                </select>
+            </div>
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+body{
+   
+}
+.heading{
+    font-family: serif;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.heading1{
+    font-family: serif;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+
+}
+.table-pos{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    
+   
+  
+}
+.submit-btn{
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #0099ff;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+  .hero{
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(just.jpg);
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+
+  }
+  .form-box{
+      width: 340px;
+      height: 470px;
+      position: absolute;
+      margin: 6% auto;
+      background-color:rgb(71, 172, 197);
+      padding: 5px;
+      top: 40px;
+      right: 30px;
+      border-radius: 30px;
+    border: 9px solid green;
+
+
+  }
+.headfir{
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+   
+}
+.para{
+    position: absolute;
+    top: 50px;
+}
+.new{
+    margin: 20px;
+    padding: 10px;
+    border: 9px solid black;
+    background-color: ivory;
+    width: 150px;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+  
+}

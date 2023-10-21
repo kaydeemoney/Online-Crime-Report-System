@@ -1,0 +1,222 @@
+{% extends 'App/main.html' %}
+
+{%load static%}
+{%block body %}
+<br/>
+
+<div class="navs_2">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/complaint_form/">Complaint Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/crime_stories/">Crime Stories</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/wanted/">Wanted Persons</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/missing/">Missing Persons</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="/help/">Help</a>
+        </li> -->
+        {% if user.is_authenticated%}
+        <li class="nav-item">
+            <a class="nav-link" href="#">Your Complaints</a>
+        </li>
+        {% endif %}
+
+    </ul>
+
+</div>
+<br/>
+<marquee behavior="scroll" bgcolor="#CE100A" direction="left">“For our society to be better, we must revive our
+    conscience and do Godly things.”</marquee>
+
+<div class="home__image">
+    <img class="home__image" src="{% static 'App/images/crime.jpg'%}">
+
+</div>
+<hr>
+<div class="box">
+    <p1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i>Upon arrival, the army chief
+            called on Nagaland governor RN Ravi at the Raj Bhavan and later met chief minister Neiphiu Rio apart from
+            other
+            top army and security officials. The meetings were held to mainly review the security situation in the
+            state,
+            officials informed. He assured the support of the army and Assam Rifles in maintaining peace and
+            tranquillity in
+            Nagaland and ensuring security along the Indo-Myanmar border.
+
+            Governor Ravi, who is also the Centre’s interlocutor for Naga peace talks, was reportedly in Delhi for some
+            time
+            but rushed back on Monday to receive the army chief.
+        </i></p1>
+</div>
+<hr>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'App/images/slide_image_1.webp'%}" class="d-block_w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'App/images/slide_image_2.webp'%}" class="d-block_w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'App/images/slide_image_3.webp'%}" class="d-block_w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'App/images/slide_image_4.webp'%}" class="d-block_w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<hr>
+<hr>
+<h3 id="crime__heading">CRIME TYPES</h3>
+<hr>
+<hr>
+<div class="crime__div">
+    <div class="row1" style="margin:120px;">
+        <div class="crime__card">
+            <img class="card__image" src="https://source.unsplash.com/400x400/?Persoanl Crime" alt="crime image">
+            <div>
+                <h5>Personal Crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+        <div class="crime__card">
+
+            <img class="card__image" src="https://source.unsplash.com/400x400/?Proerty crime" alt="crime image">
+            <div>
+                <h5>Property crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+        <div class="crime__card">
+
+            <img class="card__image" src="https://source.unsplash.com/400x400/?Financial crime" alt="crime image">
+            <div>
+                <h5>Financial crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row2" style="margin:120px;">
+        <div class="crime__card">
+            <img class="card__image" src="https://source.unsplash.com/400x400/?Statutory Crime" alt="crime image">
+            <div>
+                <h5>Statutory Crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+        <div class="crime__card">
+
+            <img class="card__image" src="https://source.unsplash.com/400x400/?white collar Crime" alt="crime image">
+            <div>
+                <h5>White Collar Crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+        <div class="crime__card">
+
+            <img class="card__image" src="https://source.unsplash.com/400x400/?cyber Crime" alt="crime image">
+            <div>
+                <h5>Cyber Crime</h5>
+                <marquee behavior="scroll" bgcolor="008B8B" direction="up">“For our society to be better, we must
+                    revive our
+                    conscience and do Godly thingsFor our society to be better, we must revive our conscience and do
+                    Godly
+                    things.”</marquee>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- <hr>
+<hr>
+<h3 id="crime__heading"><b>OUR MENTORS</b></h3>
+<hr>
+<hr>
+<div class="mentor_div">
+    <div class="mentor_row">
+        <div class="mentor">
+            <img class="cimage" src="{% static 'App/images/president.jpg'%}" alt="crime image">
+            <div class="mentor_name">
+                <p>pr. Ram nath kovind</p>
+            </div>
+        </div>
+        <div class="mentor">
+
+            <img class="cimage" src="{% static 'App/images/prime.jpg'%}" alt="crime image">
+            <div class="mentor_name">
+                <p>Ho. prime minister</p>
+
+            </div>
+        </div>
+        <div class="mentor">
+
+            <img class="cimage" src="{% static 'App/images/police.jpg'%}" alt="crime image">
+            <figcaption>DIG UP</figcaption>
+            <!-- <div class="mentor_name">
+                <p>DIG UP</p>
+
+            </div> -->
+        </div>
+
+    </div>
+</div> 
+
+
+
+
+
+
+{% endblock %}
